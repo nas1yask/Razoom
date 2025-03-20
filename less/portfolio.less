@@ -2,6 +2,8 @@
     width: 100%;
     padding: 60px 0;
     padding-bottom: 80px;
+    background-color: rgb(16, 26, 36);
+    color: #fff;
     h2{
         font-size: 37px;
         font-family: inMed;
@@ -49,6 +51,7 @@
                         margin-bottom: 30px;
                         border-radius: 30px;
                         overflow: hidden;
+                        // box-shadow: 0px 0px 2px #ffffff74;
                         .layer{
                             width: 100%;
                             height: 100%;
@@ -56,22 +59,28 @@
                             transition: 0.3s;
 
                             &::before{
-                                content: '';
+                                content: 'NAZARBAYEV UNIVERSITY';
                                 position: absolute;
                                 top: 0;
                                 left: 0;
-                                opacity: 0.5;
                                 width: 100%;
                                 height: 100%;
-
-                            
-                                
+                                background: rgba(255, 0, 0, 0.4);
+                                transition: 0.3s;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: center;
+                                color: #fff;
+                                font-weight: 600;
+                                transform: translateY(-30px);
+                                padding-bottom: 30px;
                             }
                             &:hover{
                                 transform: scale(1.1);
                             }
                             &:hover::before{
                                 cursor: pointer;
+                                opacity: 0;
                             }
                         }
                     }
@@ -86,7 +95,7 @@
                                 .layer{
                                     background: url(../img/shirP2.jpg) no-repeat center/cover;
                                 }
-                                transform: translateY(30px);
+                                transform: translateY(50px);
                             }
                             &:nth-child(3){
                                 .layer{
@@ -99,7 +108,7 @@
                                 }
                             }
                             &:nth-child(5){
-                                transform: translateY(40px);
+                                transform: translateY(50px);
                                 .layer{
                                     background: url(../img/shirP5.jpg) no-repeat center/cover;
                                 }
@@ -118,6 +127,6 @@
 }
 
 .active{
-    color: red;
-    border-bottom: 1.5px solid red !important;
+    color: @mainClr;
+    border-bottom: 1.5px solid @mainClr !important;
 }
