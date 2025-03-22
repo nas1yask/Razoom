@@ -1,10 +1,10 @@
 $(document).ready(function(){
     // SLIDER SLICK 
-    $('.slider').slick({
+    $('.sliderr').slick({
         arrows: false,
         autoplay: true,
         autoplaySpeed: 2500,
-        fade:true,
+        // fade:true,
         pauseOnHover: false,
         speed: 1000
     });
@@ -24,12 +24,7 @@ $(document).ready(function(){
           $(".tab_item").hide().eq($(this).index()).fadeIn()
       }).eq(0).addClass("active");
 
-    //   PARALLAX 
-    window.addEventListener('scroll', ()=>{
-        let scrollPosition = window.scrollY
-        document.querySelector('.parallax-bg').style.transform = `translateY(${scrollPosition * 0.5}px)`
-    })
-
+      
 
   });
 

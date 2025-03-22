@@ -3,6 +3,9 @@
     height: 100svh;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .abs1,.abs2,.abs3,.abs4,.abs5,.abs6{
         position: absolute;
         z-index: -3;
@@ -36,7 +39,6 @@
         margin: 0 auto;
         padding-top: 20px;
         padding-bottom: 20px;
-        margin-bottom: 50px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         background: #fff;
         .container{
@@ -74,8 +76,9 @@
     }
     >.container{
         width: 1200px;
-        margin: 0 auto;
+        margin: auto;
         .flex_b;
+        align-items: flex-start;
         article{
             width: 50%;
             margin-right: 40px;
@@ -159,39 +162,78 @@
                
             }
         }
-        .slider{
-            width: 564px;
-            height: 320px;
-            border-radius: 40px 5px 40px 5px;
+        // .slider{
+        //     width: 564px;
+        //     height: 320px;
+        //     border-radius: 40px 5px 40px 5px;
 
-            div{
+        //     div{
+        //         width: 100%;
+        //         height: 100%;
+        //         background-repeat: no-repeat;
+        //         background-size: cover;
+        //         border-radius: inherit;
+
+        //         &:nth-child(1){
+        //             background-image: url(../img/slide8.jpeg);
+        //         }
+        //         &:nth-child(2){
+        //             background-image: url(../img/slide2.jpeg);
+        //         }
+        //         &:nth-child(3){
+        //             background-image: url(../img/slide3.jpeg);
+        //         }
+        //         &:nth-child(4){
+        //             background-image: url(../img/slide4.png);
+        //         }
+        //         &:nth-child(5){
+        //             background-image: url(../img/slide5.jpg);
+        //         }
+        //         &:nth-child(6){
+        //             background-image: url(../img/slide6.jpg);
+        //             background-position: top;
+        //         }
+        //         &:nth-child(7){
+        //             background-image: url(../img/slide7.jpg);
+        //         }
+        //     }
+        // }
+
+        .slider{
+            width: 500px;   
+            height: 300px;
+            > div{
                 width: 100%;
                 height: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                border-radius: inherit;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                position: relative;
+                nav{
+                    width: 85%;
+                    height: 300px;
+                    background: url(../img/slide8.jpeg) no-repeat center/cover;
+                    border-radius: 35px 0 35px 0;
+                }
+                .desc{
+                    width: 300px;
+                    height: 150px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: -60px;
+                    background: #000000b0;
+                    // box-shadow: 1px 1px 3px #00000090;
+                    padding: 20px;
+                    color: #fff;
+                    border-radius: 0px 35px 0px 35px;
+                    .flex_c;
 
-                &:nth-child(1){
-                    background-image: url(../img/a9b40eb54800-u..product-category_695_5b39fbc60f687.w.500_xgxgx.jpg);
-                }
-                &:nth-child(2){
-                    background-image: url(../img/slide2.jpeg);
-                }
-                &:nth-child(3){
-                    background-image: url(../img/slide3.jpeg);
-                }
-                &:nth-child(4){
-                    background-image: url(../img/slide4.png);
-                }
-                &:nth-child(5){
-                    background-image: url(../img/slide5.jpg);
-                }
-                &:nth-child(6){
-                    background-image: url(../img/slide6.jpg);
-                    background-position: top;
-                }
-                &:nth-child(7){
-                    background-image: url(../img/slide7.jpg);
+                    p{
+                        font-size: 14px;
+                        width: 100%;
+                        text-align: left;
+                        line-height: 25px;
+                    }
                 }
             }
         }
