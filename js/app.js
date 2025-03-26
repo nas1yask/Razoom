@@ -11,11 +11,13 @@ $(document).ready(function(){
 
     // TYPED JS 
     var typed = new Typed('.services_type', {
-        strings: ['Широкоформатная печать', 'Государственная символика', 'Наружная реклама', 'Полиграфия и сувенирная продукция', 'Оформление мероприятий', 'Дизайн макеты и 3D-моделирование', 'Флажная продукция', 'Оформление офисов и точек продаж', 'Застройка выставочных стендов'],
+        strings: ['по изготовлению рекламы,', 'полиграфической продукции', 'и комплексному сопровождению мероприятий'],
         typeSpeed: 70,
         backSpeed: 50,
         loop: true
       });
+
+        //   по изготовлению рекламы, полиграфической продукции и комплексному сопровождению мероприятий.
 
     //   TABS 
       $(".tab_item").not(":first").hide();
@@ -24,7 +26,36 @@ $(document).ready(function(){
           $(".tab_item").hide().eq($(this).index()).fadeIn()
       }).eq(0).addClass("active");
 
+
+    //   SWIPER
+
       
+      const swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 30,
+            stretch: 50,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false,
+        },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        }
+    });
 
   });
 
