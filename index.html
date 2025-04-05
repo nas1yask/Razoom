@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- MAINBLOCK  -->
-    <section class="main_block">
+    <section class="main_block" id="main">
         <!-- absolute lines  -->
         <img src="img/line1.svg" alt="" class="abs1">
         <img src="img/line1.svg" alt="" class="abs2">
@@ -27,12 +27,13 @@
             <div class="container">
                 <img src="./img/логотип.svg" alt="logo" class="logo">
                 <menu>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
                     <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#vacancies">Вакансии</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </menu>
                 <a href="#" tel="#" class="tel">+7 778 778 78 78</a>
             </div>
@@ -81,7 +82,7 @@
 
     <!-- ABOUT US -->
 
-    <div class="about_us parallax-window" data-parallax="scroll" data-image-src="img/aboutBG.jpg">
+    <div class="about_us parallax-window" data-parallax="scroll" data-image-src="img/aboutBG.jpg" id="about">
       <div class="layer">
         <div class="container">
           <h2>О нас</h2>
@@ -102,23 +103,23 @@
         <img src="img/line1.svg" alt="" class="absl1">
         <img src="img/line1.svg" alt="" class="absl2">
         <img src="img/line1.svg" alt="" class="absl3">
+        <img src="img/line1.svg" alt="" class="abs7">
+        <img src="img/line1.svg" alt="" class="abs8">
+        <img src="img/line1.svg" alt="" class="abs9">
         <div class="container">
             <article>
                 <nav></nav>
                 <section>
-                    <h2>О компании Zoom</h2>
+                    <h2>О компании <span>Zoom</span></h2>
                     <p>Мы предлагаем полный спектр услуг: от составления дизайн-проекта до монтажа готовых рекламных конструкций.</p>
                     <p>Собственное производство дает нам <span>возможность</span> быстро и качественно изготавливать любую рекламную продукцию, кроме того, это позволяет <span>нам</span> предлагать разумные и конкурентоспособные цены нашим клиентам. Существует гибкая система скидок для постоянных клиентов, <span>рекламных агентств,</span> сетевых магазинов, а также при заказе комплекса наружной рекламы.</p>
                 </section>
-                <div>
-                    <h4>RAZOOM</h4>
-                </div>
             </article>
         </div>
     </div>
 
     <!-- SERVICES  -->
-    <div class="services">
+    <div class="services" id="services">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">Slide 1</div>
@@ -203,8 +204,7 @@
 
     <!-- FEEDBACK -->
 
-    <div class="feedback">
-
+    <div class="feedback" id="feedback">
         <img src="img/line1.svg" alt="" class="abs7">
         <img src="img/line1.svg" alt="" class="abs8">
         <img src="img/line1.svg" alt="" class="abs9">
@@ -216,8 +216,6 @@
             <h1>Отзывы</h1>
             <p>Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Obcaecati, et odio vel ipsa corrupti.</p>
 
-            
-            
             <div class="razoom_txt">
                 <h4>RAZOOM</h4>
             </div>
@@ -229,14 +227,56 @@
                         <h4>User 1</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate iure itaque, aut quo id qui consectetur ipsam impedit repellat, veritatis neque optio blanditiis sunt odio quisquam, ducimus voluptatem aperiam atque.</p>
                         <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #ffcd27;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffcd27;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffcd27;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffcd27"></i>
-                            <i class="fa-solid fa-star" style="color: #ffcd27;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E"></i>
+                            <i class="fa-solid fa-star" style="color: #F2403E;"></i>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM -->
+
+    <div class="resumeForm" id="vacancies">
+        <div class="layer">
+            <div class="container">
+                <article>
+                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae impedit libero numquam placeat voluptas magnam consequuntur amet pariatur aliquid provident.</p>
+                </article>
+                <form>
+                    <h2>Меня интересует:</h2>
+                    <div class="vacancies">
+                        <div class="vacancy">Менеджер по продажам</div>
+                        <div class="vacancy">Офис-менеджер</div>
+                        <div class="vacancy">Дизайнер-конструктор</div>
+                        <div class="vacancy">Дизайнер</div>
+                        <div class="vacancy">Специалист отдела широкоформатной печати</div>
+                        <div class="vacancy">Заведующий складом</div>
+                        <div class="vacancy">Бухгалтер</div>
+                        <div class="vacancy">Водитель-монтажник</div>
+                        <div class="vacancy">Монтажник-макетчик</div>
+                        <div class="vacancy">Оператор фрезерного и лазерного станков</div>
+                        <div class="vacancy">Начальник отдела продаж</div>
+                    </div>
+                    <h3>Ваше имя:</h3>
+                    <input type="text">
+                    <h3>Номер телефона:</h3>
+                    <input type="tel">
+                    <input type="file" accept=".docx, .pdf">
+                    <div class="selectFile">
+                        <div class="inputFile">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                            <span>Выберите файл...</span>
+                        </div>
+                        <h3>Загрузите ваше резюме</h3>
+                    </div>
+                    <input type="submit" value="Отправить резюме">
+                </form>
             </div>
         </div>
     </div>
@@ -249,3 +289,24 @@
     <script src="js/app.js"></script>
 </body>
 </html>
+
+
+<!-- 
+Отправка формы
+inputmaked для формы номера 
+Форма обратной связи в модалке
+Изменение текста при выборе файла 
+Условие на файл формата
+Выборка Вакансии
+focus input поменять текст H3 
+Слайдер на главном
+Слайдер на отзывы 
+Услуги раздел 
+Виджет для обратной связи 
+Анимация 
+Моб версия 
+Хост данные 
+Оптимизация картинок и кода 
+header фиксед оцентировать центарльный контент 
+раздел футер макет  
+-->

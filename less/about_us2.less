@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid red;
-    .absl1,.absl2,.absl3{
+    .absl1,.absl2,.absl3,.abs7,.abs8,.abs9{
         position: absolute;
         // z-index: -3;
         width: 600px;
@@ -20,6 +20,18 @@
     .absl3{
         left: -350px;
         top: -260px;
+    }
+    .abs7{
+        right: -250px;
+        bottom: -400px;
+    }
+    .abs8{
+        right: -200px;
+        bottom: -400px;
+    }
+    .abs9{
+        right: -370px;
+        bottom: -340px;
     }
     .container{
         width: 1200px;
@@ -42,9 +54,11 @@
                 flex-direction: column;
                 h2{
                     margin-bottom: 20px;
-                    font-size: 25px;
+                    font-size: 30px;
                     font-family: inBold;
-                    color: @mainClr;
+                    span{
+                        color: @mainClr;
+                    }
                 }
                 p{
                     font-size: 15px;
@@ -55,21 +69,6 @@
                 }
                 :nth-child(2){
                     margin-bottom: 15px;
-                }
-            }
-            >div{
-                transform: rotate(90deg);
-                position: absolute;
-                right: -140px;
-                bottom: 20;
-                z-index: -1;
-
-                h4{
-                    font-size: 85px; 
-                    font-family: inBold;                       
-                    background: linear-gradient(to top, rgba(252, 252, 255, 0.146), rgba(0, 0, 0, 0.059));
-                    -webkit-text-fill-color: transparent;
-                    -webkit-background-clip: text;
                 }
             }
         }

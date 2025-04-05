@@ -57,7 +57,18 @@ $(document).ready(function(){
         }
     });
 
+    // OPEN INPUT FILE 
+
+
+
   });
+
+  const inputFile = document.querySelector('.inputFile')
+  const inpFile = document.querySelector('input[type=file]')
+
+  inputFile.addEventListener('click', ()=>{
+      inpFile.click()
+  })
 
 
 
