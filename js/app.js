@@ -30,45 +30,49 @@ $(document).ready(function(){
     //   SWIPER
 
       
-      const swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 30,
-            stretch: 50,
-            depth: 300,
-            modifier: 1,
-            slideShadows: false,
-        },
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        }
-    });
+    //   const swiper = new Swiper(".mySwiper", {
+    //     effect: "coverflow",
+    //     grabCursor: true,
+    //     centeredSlides: true,
+    //     slidesPerView: "auto",
+    //     coverflowEffect: {
+    //         rotate: 30,
+    //         stretch: 50,
+    //         depth: 300,
+    //         modifier: 1,
+    //         slideShadows: false,
+    //     },
+    //     loop: true,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    //     navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     },
+    //     autoplay: {
+    //         delay: 3000,
+    //         disableOnInteraction: false,
+    //     }
+    // });
 
-    // OPEN INPUT FILE 
+  
+    //   MASK FOR TEL   
+  $(".telNum").mask("+7 (999) 999-9999");
 
 
-
-  });
-
+    //   INPUT FILE OPEN 
   const inputFile = document.querySelector('.inputFile')
   const inpFile = document.querySelector('input[type=file]')
 
   inputFile.addEventListener('click', ()=>{
       inpFile.click()
   })
+
+
+  });
+
 
 
 
